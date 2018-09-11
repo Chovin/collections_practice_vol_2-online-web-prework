@@ -19,7 +19,7 @@ def count_elements arr
 end  # => :count_elements
 
 def merge_data arr, arr2
-  arr.merge arr2
+  arr.concat arr2
 end  # => :merge_data
 
 def find_cool arr
