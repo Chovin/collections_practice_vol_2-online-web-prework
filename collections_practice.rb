@@ -33,4 +33,5 @@ def organize_schools arr
     ret[location] ||= []
     ret[location] << name
   end
+  ret
 end  # => :organize_schools
