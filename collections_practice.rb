@@ -1,30 +1,30 @@
 def begins_with_r arr
-  arr.all? {|x| x.start_with? "r"}  # => false
-end                                 # => :begins_with_r
+  arr.all? {|x| x.start_with? "r"}
+end
 
 def contain_a arr
   arr.select {|x| x.include? 'a'}
-end  # => :contain_a
+end
 
 def first_wa arr
   arr.find {|x| x.to_s.start_with? "wa"}
-end  # => :first_wa
+end
 
 def remove_non_strings arr
   arr.select {|x| x.is_a? String}
-end  # => :remove_non_strings
+end
 
 def count_elements arr
   arr.map{|x| x.merge({count: arr.count(x)}) if not x.key?(:count)}.uniq
-end  # => :count_elements
+end
 
 def merge_data keys, data
   keys.map {|x| x.merge(data[0][x[:first_name]])}
-end  # => :merge_data
+end
 
 def find_cool arr
   arr.select {|x| x[:temperature] == "cool"}
-end  # => :find_cool
+end
 
 def organize_schools arr
   ret = {}
@@ -34,4 +34,4 @@ def organize_schools arr
     ret[location] << name
   end
   ret
-end  # => :organize_schools
+end
