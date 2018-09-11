@@ -1,5 +1,5 @@
 def begins_with_r arr
-  arr.all? {|x| x.startswith 'r'}
+  arr.all? {|x| x.startswith "r"}
 end
 
 def contain_a arr
