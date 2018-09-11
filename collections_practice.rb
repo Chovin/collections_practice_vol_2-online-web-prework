@@ -1,6 +1,6 @@
 def begins_with_r arr
-  arr.all? {|x| x.starts_with? "r"}  # ~> NoMethodError: undefined method `startswith' for "ruby":String\nDid you mean?  start_with?
-end                                # => :begins_with_r
+  arr.all? {|x| x.start_with? "r"}  # ~> NoMethodError: undefined method `starts_with?' for "ruby":String\nDid you mean?  start_with?
+end                                  # => :begins_with_r
 
 begins_with_r ["ruby", "rails", "sails"]
 
@@ -33,7 +33,7 @@ def organize_schools arr
 end
 
 # ~> NoMethodError
-# ~> undefined method `startswith' for "ruby":String
+# ~> undefined method `starts_with?' for "ruby":String
 # ~> Did you mean?  start_with?
 # ~>
 # ~> collections_practice.rb:2:in `block in begins_with_r'
