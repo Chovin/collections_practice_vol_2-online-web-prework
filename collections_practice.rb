@@ -3,11 +3,11 @@ def begins_with_r arr
 end                                 # => :begins_with_r
 
 def contain_a arr
-  arr.select {|x| x.includes? 'a'}
+  arr.select {|x| x.include? 'a'}
 end  # => :contain_a
 
 def first_wa arr
-
+  
 end  # => :first_wa
 
 def remove_non_strings arr
