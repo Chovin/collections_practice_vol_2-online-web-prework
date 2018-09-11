@@ -1,5 +1,5 @@
 def begins_with_r arr
-  arr.all? {|x| x.starts_with "r"}  # ~> NoMethodError: undefined method `startswith' for "ruby":String\nDid you mean?  start_with?
+  arr.all? {|x| x.starts_with? "r"}  # ~> NoMethodError: undefined method `startswith' for "ruby":String\nDid you mean?  start_with?
 end                                # => :begins_with_r
 
 begins_with_r ["ruby", "rails", "sails"]
