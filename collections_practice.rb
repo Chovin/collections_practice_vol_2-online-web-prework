@@ -27,5 +27,10 @@ def find_cool arr
 end  # => :find_cool
 
 def organize_schools arr
-
+  ret = {}
+  arr.each do |name, loc_hash|
+    location = loc_hash[:location]
+    ret[location] ||= []
+    ret[location] << name
+  end
 end  # => :organize_schools
