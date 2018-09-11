@@ -11,7 +11,7 @@ def first_wa arr
 end  # => :first_wa
 
 def remove_non_strings arr
-
+  arr.map {|x| x.is_a? String}
 end  # => :remove_non_strings
 
 def count_elements arr
