@@ -18,8 +18,8 @@ def count_elements arr
   arr.map{|x| x.merge({count: arr.count(x)}) if not x.key?(:count)}.uniq
 end  # => :count_elements
 
-def merge_data arr
-
+def merge_data arr, arr2
+  arr.merge arr2
 end  # => :merge_data
 
 def find_cool arr
