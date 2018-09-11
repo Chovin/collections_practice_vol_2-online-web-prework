@@ -7,7 +7,7 @@ def contain_a arr
 end  # => :contain_a
 
 def first_wa arr
-  arr.find {|x| x.start_with? "wa"}
+  arr.find {|x| x.to_s.start_with? "wa"}
 end  # => :first_wa
 
 def remove_non_strings arr
