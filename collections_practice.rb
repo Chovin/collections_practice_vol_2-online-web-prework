@@ -23,7 +23,7 @@ def merge_data keys, data
 end  # => :merge_data
 
 def find_cool arr
-
+  arr.select {|x| x[:temperature] == "cool"}
 end  # => :find_cool
 
 def organize_schools arr
