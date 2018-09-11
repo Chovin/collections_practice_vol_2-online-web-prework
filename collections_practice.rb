@@ -3,7 +3,7 @@ def begins_with_r arr
 end                                 # => :begins_with_r
 
 def contain_a arr
-
+  arr.select {|x| x.includes? 'a'}
 end  # => :contain_a
 
 def first_wa arr
