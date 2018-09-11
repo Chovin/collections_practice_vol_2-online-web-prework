@@ -15,7 +15,6 @@ def remove_non_strings arr
 end  # => :remove_non_strings
 
 def count_elements arr
-  ret = []
   arr.map(){|x| x << :count => arr.count x if not arr.key? :count}).uniq
 end  # => :count_elements
 
